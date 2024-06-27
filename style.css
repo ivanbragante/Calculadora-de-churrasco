@@ -1,0 +1,83 @@
+ /* Estilos base */
+ body {
+    font-family: 'Barlow', sans-serif;
+    background-image: url('https://example.com/fundo-churrasco.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #FF6347;
+}
+
+/* Container principal */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Estilos para o formulário */
+.CalculadoraForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.CalculadoraDivInput {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.CalculadoraDivInput input {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #FF6347;
+    border-radius: 5px;
+}
+
+.CalculadoraDivInput label {
+    width: 35%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Botão de submissão */
+input[type="submit"] {
+    background-color: #FF6347;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e5533d;
+}
+
+/* Estilos para a lista de ingredientes */
+#ingredienteUl {
+    list-style-type: none;
+    padding: 0;
+}
+
+#ingredienteUl li {
+    background-color: #FFE4E1;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #FF6347;
+}

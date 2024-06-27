@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Churrasco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <section id="container">
+        <h1 id="title">Mapa Unicesumar - Programação FrontEnd</h1>
+        <div id="Calculadora">
+            <h2 class="CalculadoraTitle">Calculdora de Churrasco</h2>
+            <p>Preencha as informações abaixo para calcular a quantidade de ingredientes necessária para o seu churrasco.</p>
+            <form onsubmit="return handleSubmit()" method="post" class="CalculadoraForm">
+                <div class="CalculadoraDivInput">
+                    <label for="homens">Homens:</label>
+                    <input type="number" class="homens" min="0">
+                </div>
+                <div class="CalculadoraDivInput">
+                    <label for="mulheres">Mulheres:</label>
+                    <input type="number" class="mulheres" min="0">
+                </div>
+                <div class="CalculadoraDivInput">
+                    <label for="criancas">Crianças:</label>
+                    <input type="number" class="criancas" min="0">
+                </div>
+                <input type="submit" value="Calcular">
+            </form>
+            <div id="Resultado">
+                <h3>Quantidade de itens a serem comprados:</h3>
+                <ul id="ingredienteUl"></ul>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
